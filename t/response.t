@@ -1,13 +1,18 @@
 use strict;
 use warnings;
-use Test::More tests => 7;
+use Test::More;
 use HTTP::Response;
-
-
-use_ok( 'P5kkelabels' );
 
 my $api_user = '-- API USER --';
 my $api_key = ' -- API KEY --';
+
+if ($api_user =~ /API/ ) {
+	plan skip_all => 'Add your own api user and key to run this test';
+} else {
+	plan tests => 7
+};
+
+use_ok( 'P5kkelabels' );
 
 ok (my $lbl = P5kkelabels->new(api_user => $api_user, api_key => $api_key), "New P5kkelabel");
 
