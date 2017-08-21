@@ -1,5 +1,7 @@
 package P5kkelabels;
 
+use 5.010;
+
 use Moo;
 with 'Role::REST::Client';
 
