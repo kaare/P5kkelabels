@@ -1,6 +1,9 @@
 Revision history for P5kkelabels
 
 {{$NEXT}}
+ - Upgrade to V3. NB! This will very likely break any code relying on the old
+   behaviour
+ - Add more tests
 
 0.02    2017-08-21 07:06:06 Europe/Copenhagen
 
